@@ -4,28 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/style.css">
-
+    <link rel="icon" type="image/ico" href="./static/images/kisspng-rick-sanchez-pickle-rick-morty-smith-pickled-cucum-rick-and-morty-5b3a21f0d8a952.2759486215305364328875.jpg">
     <title>rickandmortyapi</title>
+    <link rel="stylesheet" href="./static/style.css">
 </head>
 <body>
 
-    <img class= "logo"src="./static/images/logo@2x.png" width="280" alt="logo">
-    <div id="character-container"></div>
-    <div class="wrapper">
-    <article class="character">
-        <div class="character-grid">
-            <img class="character-image" src=" https://rickandmortyapi.com/api/character/avatar/1.jpeg" alt="Rick Sanchez">
-            <div class="character-labels">
-                <h3 class="character-label">Genero:</h3>
-                <h3 class="character-label">Especie:</h3>
-                <h3 class="character-label">Status:</h3>
-            </div>
-            <h2 class="character-name">Rick Sanchez</h2>
-            
+    
+    <div class="placeholder-container">
+        <h1 id="character-name-placeholder" class="character-name-placeholder"></h1>
+      </div>
+      <div class="grid">
+        <span class="asset top">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="line"></span>
+        </span>
+        <img class="logo" src="./static/images/logo@2x.png" width="280" alt="">
+        <div class="social">
+          <a href="https://www.instagram.com">
+            <img src="./static/images/instagram.svg" alt="">
+          </a>
+          <a href="https://facebook.com">
+            <img src="./static/images/facebook.svg" alt="">
+          </a>
+          <a href="https://twitter.com">
+            <img src="./static/images/twitter.svg" alt="">
+          </a>
         </div>
-    </article>
-    </div>
+        <div class="navigation name">
+          <a href="#">Name</a>
+        </div>
+        <div id="character-name-container" class="character-name-container">
+    
+        </div>
+    
+        <div id="character-image-container" class="character-image-container">
+        </div>
+        <div class="navigation about">
+          <a href="#">About</a>
+        </div>
+    
+    
+        <div id="character-description-container" class="character-description-container">
+    
+        </div>
+        <span class="asset bottom">
+          <span class="line"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </span>
+    
+        <div></div>
+        <div class="learn-more">
+          <span>learn more</span>
+        </div>
+    
+        <div class="arrow" id="load-next"></div>
+    
+      </div>
     <script type="module" src="./static/js/style.js"></script>
 </body>
 </html>
